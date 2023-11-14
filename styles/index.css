@@ -1,0 +1,6 @@
+@import "../fonts/Jost/font-face.css";
+
+.jost {
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+}
