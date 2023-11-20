@@ -1,6 +1,22 @@
 @import "../fonts/Jost/font-face.css";
+@import "../fonts/Poppins/font-face.css";
 
 .jost {
   font-family: 'Jost', sans-serif;
   font-weight: bold;
+}
+
+.container {
+  margin: 80px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 48px;
+  color: rgba(14, 5, 120, 1);
 }
