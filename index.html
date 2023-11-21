@@ -6,13 +6,44 @@
   <title>UniDesign</title>
   <link rel='stylesheet' href='./styles/index.css'>
 </head>
-<body>
-  <header>
-    <div class='container'>
-      <nav>
+<body class='container'>
+  <section class='hero'>
+    <div class='hero__container'>
+      <nav class='hero__nav'>
         <a href="#" class='logo'>UniDesign</a>
+        <ul class='hero__nav_items'>
+          <li class='hero__nav_item'>
+            <a href="#">About Me</a>
+          </li>
+          <li class='hero__nav_item'>
+            <a href="#">Projects</a>
+          </li>
+          <li class='hero__nav_item'>
+            <a href="#">Contracts</a>
+          </li>
+          <li class='hero__nav_item'>
+            <a href="#">Hire Me</a>
+          </li>
+        </ul>
       </nav>
+      <div class='hero__about'>
+        <div class='hero__about_me'>
+          <div class='hero__greet'>Welcome To My Portfolio</div>
+          <h1 class='hero__title'>Hi, I am Steven <br />UX/UI <span class='hero__title-accent'>Designer</span></h1>
+          <div class='hero__description'>
+            Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et, plateo erat est sed turpis hoc equit
+          </div>
+          <div class='hero__actions'>
+            <button class='button button--primary'>Hire Me</button>
+            <button class='button button--secondary'>My Project</button>
+          </div>
+        </div>
+        <div class='hero__about_img'>
+          <img src='./assets/portrait.png' alt='Steven' />
+        </div>
+      </div>
+      
     </div>
-  </header>
+  </section>
 </body>
 </html>
