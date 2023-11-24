@@ -1,10 +1,20 @@
 @import "../fonts/Jost/font-face.css";
 @import "../fonts/Poppins/font-face.css";
-@import "../styles/normaliza.css";
+@import "../styles/normalize.css";
 
 html {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
 }
 
 :root {
@@ -34,10 +44,7 @@ a {
 
 .hero {
   margin-top: 45px;
-}
-
-.hero__container {
-  margin: 0 78px;
+  margin-bottom: 150px;
 }
 
 .hero__nav {
@@ -70,7 +77,7 @@ a {
   min-width: 600px;
 }
 
-.hero__about_img img {
+.img img {
   max-width: 100%;
 }
 
@@ -126,4 +133,230 @@ a {
   background-color: #F6F5FE;
   color: var(--main-accent-color);
   border: 2px solid var(--main-accent-color);
+}
+
+.button--flat {
+  border-radius: 0;
+  box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+.title {
+  font-size: 48px;
+  color: rgba(32, 0, 231, 1);
+  letter-spacing: 0.35em;
+}
+
+.text {
+  font-size: 24px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 300px;
+}
+
+.about__action {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 25px;
+  margin-top: 220px;
+}
+
+.about__button {
+  margin-left: 32px;
+}
+
+.about-img {
+  min-width: 900px;
+
+}
+
+.projects {
+  background: #FFF7EA;
+  margin-bottom: 272px;
+}
+
+.projects__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 65px;
+}
+
+.projects__list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  row-gap: 66px;
+  margin-top: 46px;
+}
+
+.projects__list_item:nth-child(3n + 2) {
+  display: flex;
+  justify-content: center;
+}
+
+.projects__list_item:nth-child(3n) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects__img {
+  width: 246px;
+}
+
+.contact {
+  background: #F4FBFF;
+  margin-bottom: 208px;
+}
+
+.contact .title {
+  margin-bottom: 10px;
+}
+
+.contact__container {
+  display: flex;
+  padding-top: 68px;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input {
+  box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  padding: 30px 0 16px 55px;
+  font-size: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.contact__form {
+  width: 100%;
+  background-image: url("../assets/form-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding-top: 160px;
+  padding-bottom: 190px;
+}
+
+.form {
+  width: 650px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background: #FFF7EA;
+  padding-top: 137px;
+}
+
+.footer__company_title {
+  color: rgba(14, 5, 120, 1);
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+}
+
+.input-secondary {
+  background: black;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  border-radius: 30px;
+  padding: 24px 0 28px 33px;
+}
+
+.input-secondary::placeholder {
+  color: white;
+}
+
+.subscribe_form {
+  position: relative;
+}
+
+.footer__company {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.subscribe_form__submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #F965FC;
+  border-radius: 30px;
+  padding: 24px 17px 28px 17px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  border-color: transparent;
+  color: white;
+}
+
+.subscribe_form .input-secondary {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.links__title {
+  font-size: 31px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+}
+
+.footer__container {
+  display: grid;
+  column-gap: 100px;
+  grid-template-columns: 33% 1fr 1fr 1fr;
+  padding-bottom: 100px;
+}
+
+.links__item {
+  font-family: 'Jost', sans-serif;
+  font-size: 31px;
+  color: #000;
+}
+
+.divider {
+  height: 3px;
+  background: black;
+}
+
+.footer__socials {
+  padding: 80px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials p {
+  font-family: 'Jost', sans-serif;
+  font-size: 32px;
+}
+
+.socials {
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
